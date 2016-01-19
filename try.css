@@ -1,0 +1,119 @@
+body *{
+	box-sizing:border-box;
+}
+.checkbox{
+	margin:0;
+	position: absolute;
+	margin-left: 8px;
+}
+
+#task_input{
+	padding-left: 30px;
+
+	}
+body
+{
+	background-color: rgba(206, 203, 203, 0.84);
+}
+#header
+{
+	margin:auto;
+	text-align: center;
+}
+
+h1
+{
+	color:rgba(212, 161, 161, 0.51);
+	font-size: 75px;
+	margin-bottom: 5px;
+}
+input[type=checkbox]
+{
+	cursor:pointer;
+	height: 45px;
+}
+input[type=text]
+{
+	font-size: 1.5em;
+	width:500px;
+	height:45px;
+	padding-left: 10px;
+	border:0;
+
+}
+.tasks
+{
+	padding:0;
+	height:45px;
+	width:500px;
+	margin:auto;
+	background-color: white;
+	border:1px solid #ededed;
+
+
+}
+p{
+	display: inline-block;
+	margin:0;
+	padding-left: 32px;
+	padding-top: 13px;
+}
+
+
+
+
+.delete{
+	color:#af5b5e;
+	float:right;
+	font-size:1.10em;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+#footer
+{
+	padding:0;
+	height:45px;
+	width:500px;
+	margin:auto;
+	background-color: white;
+	border:1px solid #ededed;
+
+}
+#footer ul li
+{
+	list-style:none;
+	display: inline-block;
+}
+#footer ul
+{
+	padding:0;
+}
+#tasksleft
+{
+	text-align: left;
+	padding:5px;
+	margin-right:40px;
+	font-size: 0.9em;
+
+}
+button
+{
+	outline:none;
+	background: none;
+	color: #616161;
+	border:1px solid white;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+clear{
+	margin-left:40px;
+}
+
+.hidden{
+	display:none;
+}
+.isActive{
+	text-decoration: underline;
+}
