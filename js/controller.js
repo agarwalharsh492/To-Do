@@ -31,7 +31,7 @@
         this.view.bind('selectfooterelement', function(target) {
             self.activeFooterElement(target);
         });
-        this.commonActions();
+        this.commonActivities();
     };
     Controller.prototype.createNewTask = function(val) {
         var self = this;
@@ -44,32 +44,32 @@
             self.deleteTask(target);
         });
         this.view.render("clearInput");
-        this.commonActions();
+        this.commonActivities();
     };
     Controller.prototype.markAllTasks = function(state) {
         this.view.toggleAllTasks(state);
         this.model.changeStatusOfAll(state);
-        this.commonActions();
+        this.commonActivities();
 
     };
     Controller.prototype.markTask = function(state, target) {
         var id = this.view.toggleTask(state, target);
         this.model.changeStatusOfTask(state, id);
-        this.commonActions();
+        this.commonActivities();
     };
     Controller.prototype.deleteTask = function(target) {
         var id = this.view.deleteTask(target);
         this.model.removeFromStorage("single", id);
-        this.commonActions();
+        this.commonActivities();
     };
     Controller.prototype.activeFooterElement = function(target) {
         var activeTabId = this.view.activeFooterTab(target);
         if (activeTabId === "clear_tasks") {
             this.model.removeFromStorage("multiple");
         }
-        this.commonActions(target);
+        this.commonActivities(target);
     };
-    Controller.prototype.commonActions = function(parameter) {
+    Controller.prototype.commonActivities = function(parameter) {
         this.view.taskVisibility(parameter);
         var totalTasks = this.view.totalTasks();
         this.view.render("footerVisibility", totalTasks);

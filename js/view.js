@@ -97,6 +97,7 @@
             };
         } else if (typeof val === "object") {
             values = val;
+
         }
         var $elements = this.elem,
             state = values.status;
